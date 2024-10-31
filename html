@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Calcule o preço do seu imóvel</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Calculadora de imóveis</h1>
+        <p id="subtitulo">Complete com suas preferências</p>
+        <br>
+    </div>
+
+    <form id="formImovel">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="metragemimovel"><strong>Metragem do imóvel (m²): </strong></label>
+                <input type="text" name="metragemimovel" id="metragemimovel" required>
+            </div>
+            <div class="campo">
+                <label for="metragem"><strong>Valor da metragem local (R$): </strong></label>
+                <input type="text" name="metragem" id="metragem" required>
+            </div>
+            <div class="campo">
+                <label for="Número de quartos"><strong>Número de quartos:</strong></label>
+                <input type="text" name="quartos" id="Número de quartos" required>
+            </div>
+        </fieldset>
+        <button class="botao" type="submit">Calcular</button>
+        <div id="resultado" class="resultado"></div> <!-- Adicionado para mostrar o resultado -->
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
